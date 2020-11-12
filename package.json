@@ -1,0 +1,63 @@
+{
+  "_args": [
+    [
+      "@types/escpos@2.5.0",
+      "/Users/daniele/Documents/Workspace/Lavoro/Stampanti/ecspos-node"
+    ]
+  ],
+  "_development": true,
+  "_from": "@types/escpos@2.5.0",
+  "_id": "@types/escpos@2.5.0",
+  "_inBundle": false,
+  "_integrity": "sha512-rR0d5MHKMCd8TlQsS99x73lfGlcLQyNcDtCL3hvCvil87SxcEwoPJU5fLYmDqDkU/xA8u2ZufUKkEt26uHwiaA==",
+  "_location": "/@types/escpos",
+  "_phantomChildren": {},
+  "_requested": {
+    "type": "version",
+    "registry": true,
+    "raw": "@types/escpos@2.5.0",
+    "name": "@types/escpos",
+    "escapedName": "@types%2fescpos",
+    "scope": "@types",
+    "rawSpec": "2.5.0",
+    "saveSpec": null,
+    "fetchSpec": "2.5.0"
+  },
+  "_requiredBy": [
+    "#DEV:/"
+  ],
+  "_resolved": "https://registry.npmjs.org/@types/escpos/-/escpos-2.5.0.tgz",
+  "_spec": "2.5.0",
+  "_where": "/Users/daniele/Documents/Workspace/Lavoro/Stampanti/ecspos-node",
+  "bugs": {
+    "url": "https://github.com/DefinitelyTyped/DefinitelyTyped/issues"
+  },
+  "contributors": [
+    {
+      "name": "Rayo",
+      "url": "https://github.com/rayosu"
+    },
+    {
+      "name": "Gerry",
+      "url": "https://github.com/g3rrydanc3"
+    }
+  ],
+  "dependencies": {
+    "@types/node": "*"
+  },
+  "description": "TypeScript definitions for escpos",
+  "homepage": "https://github.com/DefinitelyTyped/DefinitelyTyped#readme",
+  "license": "MIT",
+  "main": "",
+  "name": "@types/escpos",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/DefinitelyTyped/DefinitelyTyped.git",
+    "directory": "types/escpos"
+  },
+  "scripts": {},
+  "typeScriptVersion": "2.4",
+  "types": "index",
+  "typesPublisherContentHash": "32965627ace26244bef0d5fba87c153f3724b8b701a63b383980afbb9c1f4805",
+  "version": "2.5.0"
+}
