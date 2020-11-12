@@ -445,9 +445,9 @@ export class Printer {
     /**
      * Set text size
      *
-     * 1 is for regular size, and 2 is twice the standard size.
+     * 0 is the smallest size, and 7 is the biggest size.
      *
-     * @default `1`
+     * @default `0`
      */
     size(width: number, height: number): Printer;
 
@@ -489,7 +489,15 @@ export class Printer {
 
     qrimage(content: string, callback?: (error: Error | null, printer?: Printer) => void): Printer;
     qrimage(content: string, options?: { type: string; mode: string }, callback?: (error: Error | null, printer?: Printer) => void): Printer;
-
+    
+    /**
+     * 
+     * @param base64 image in base64 format
+     * @param width width of the image
+     * @param height height od the image
+     * @param color color of the image [0, 1]
+     * @param mode mode of print image
+     */
     printBase64(base64: string, width: number, height: number, color: string, mode: string): Printer;
     image(image: Image, density: BITMAP_FORMAT_TYPE): Printer;
 
