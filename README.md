@@ -1,0 +1,1 @@
+**Typescript definition for escpos-package**
