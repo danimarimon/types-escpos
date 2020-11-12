@@ -490,7 +490,7 @@ export class Printer {
     qrimage(content: string, callback?: (error: Error | null, printer?: Printer) => void): Printer;
     qrimage(content: string, options?: { type: string; mode: string }, callback?: (error: Error | null, printer?: Printer) => void): Printer;
 
-    printBase64(base64: string, width: number, height: number, color: string, mode: string);
+    printBase64(base64: string, width: number, height: number, color: string, mode: string): Printer;
     image(image: Image, density: BITMAP_FORMAT_TYPE): Printer;
 
     raster(image: Image, mode?: string): Printer;
