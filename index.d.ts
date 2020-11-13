@@ -537,6 +537,13 @@ export class Printer {
      * @param color - 0 for primary color (black) 1 for secondary color (red)
      */
     color(color: 0 | 1): Printer;
+    
+    /**
+     * [reverse colors, if your printer supports it]
+     * @param {Boolean} bool - True for reverse, false otherwise
+     * @return {[Printer]} printer  [the escpos printer instance]
+     */
+    setReverseColors(reverse: boolean): Printer;
 }
 
 export class Screen {
