@@ -510,6 +510,8 @@ export class Printer {
      */
     cashdraw(pin?: number): Printer;
 
+    raw(content: Buffer | string): Printer;
+
     /**
      * Printer Buzzer (Beep sound)
      */
