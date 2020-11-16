@@ -400,7 +400,7 @@ export class Printer {
     table(data: string[], encoding?: string): Printer;
 
     tableCustom(
-        data: {
+        data: Array<{
             text: string,
             width: number,
             align: 'LEFT' | 'CENTER' | 'RIGHT'
@@ -408,7 +408,7 @@ export class Printer {
             text: string,
             cols: number,
             align: 'LEFT' | 'CENTER' | 'RIGHT'
-        },
+        }>,
         encoding?: string
     ): Printer;
 
