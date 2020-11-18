@@ -351,7 +351,7 @@ export class Image {
 }
 
 export class Printer {
-    constructor(adapter: Adapter, options?: {  encoding?: string  });
+    constructor(adapter: Adapter, options?: {  encoding?: string  }, executeCharacterSetCommand?: boolean);
 
     static create(device: Adapter): Promise<Printer>;
 
