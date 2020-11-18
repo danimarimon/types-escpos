@@ -453,6 +453,8 @@ export class Printer {
 
     style(type: TXT_STYLE): Printer;
 
+    _getStyle(typw: string): string;
+
     /**
      * Set text size
      *
