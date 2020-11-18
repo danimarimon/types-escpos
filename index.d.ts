@@ -374,6 +374,12 @@ export class Printer {
     */
     setCharacterCodeTable(codeTable: number): Printer;
 
+    //TO: test
+    enablePageMode(): Printer;
+    disablePageMode(): Printer;
+    setAreaPageMode(x: number, y: number, width: number, height: number): Printer;
+    setPositionAreaMode(x: number, y: number): Printer;
+
     marginBottom(size: number): Printer;
 
     marginLeft(size: number): Printer;
