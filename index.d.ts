@@ -363,6 +363,17 @@ export class Printer {
      */
     model(_model: string): Printer;
 
+    
+    /*
+        CODES:{
+        PC437:'\x00', //PC437 - 0
+        LATIN1:'\x10', //WPC1252 - 16
+        LATIN2:'\x12', //PC852 (Latin2) - 18
+        PC858:'\x13', //PC858 - 19
+        }
+    */
+    setCharacterCodeTable(codeTable: number): Printer;
+
     marginBottom(size: number): Printer;
 
     marginLeft(size: number): Printer;
