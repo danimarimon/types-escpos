@@ -377,6 +377,7 @@ export class Printer {
     //TO: test
     enablePageMode(): Printer;
     disablePageMode(): Printer;
+    printDataInPageModeAndExit(): Printer;
     setAreaPageMode(x: number, y: number, width: number, height: number): Printer;
     setPositionAreaMode(x: number, y: number): Printer;
     printDataInPageMode(): Printer;
