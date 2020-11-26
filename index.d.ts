@@ -404,6 +404,7 @@ export class Printer {
     disablePageMode(): Printer;
     printDataInPageMode(): Printer;
     printDataInPageModeAndExit(): Printer;
+    setAbsolutePrintPosition(x: number, y: number): Printer;
     setAreaPageMode(x: number, y: number, width: number, height: number): Printer;
     setPositionAreaMode(x: number, y?: number): Printer;
 
