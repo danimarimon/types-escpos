@@ -31,6 +31,30 @@ export type BARCODE_TYPE = 'UPC_A' | 'UPC_E' | 'EAN13' | 'EAN8' | 'CODE39' | 'IT
 export type TXT_ALIGN = 'LT' | 'CT' | 'RT';
 
 export namespace command {
+    /**
+     * PAGE MODE
+     */
+    const L: '\x4c'; //Switches from standard mode to page mode
+    const S: '\x53'; //Switches from page mode to standard
+
+    const $: '\x24';
+    /**
+     * ESC T n -> Select print direction in page mode
+     * 
+     * 0≤ n ≤3,
+     * 48≤ n ≤51
+     * 
+     * Select the print direction and starting position in page mode.
+     * n specifies the print direction and starting position as follows
+     */
+  
+    const T: '\x1b\x54'; //Select print direction in page mode
+    const W: '\x1b\x57'; //Select printing area in page mode
+    const BACKSLASH: '\x1b\x5c'; // Select relative print position
+  
+    /**
+     * STANDARD MODE
+     */
     const LF: '\x0a';
     const FS: '\x1c';
     const FF: '\x0c';
@@ -376,11 +400,12 @@ export class Printer {
 
     //TO: test
     enablePageMode(): Printer;
+    pageModePrintDirection(value: number | string): Printer;
     disablePageMode(): Printer;
+    printDataInPageMode(): Printer;
     printDataInPageModeAndExit(): Printer;
     setAreaPageMode(x: number, y: number, width: number, height: number): Printer;
-    setPositionAreaMode(x: number, y: number): Printer;
-    printDataInPageMode(): Printer;
+    setPositionAreaMode(x: number, y?: number): Printer;
 
     marginBottom(size: number): Printer;
 
