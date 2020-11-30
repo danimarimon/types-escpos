@@ -547,6 +547,7 @@ export class Printer {
      */
     printBase64(base64: string, width: number, height: number, color: string, mode: string): Printer;
     image(image: Image, density: BITMAP_FORMAT_TYPE): Printer;
+    imageBitmap(base64: string);
 
     raster(image: Image, mode?: string): Printer;
 
