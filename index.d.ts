@@ -400,7 +400,7 @@ export class Printer {
 
     //TO: test
     enablePageMode(): Printer;
-    pageModePrintDirection(value: number | string): Printer;
+    pageModePrintDirection(value: number): Printer;
     disablePageMode(): Printer;
     printDataInPageMode(): Printer;
     printDataInPageModeAndExit(): Printer;
