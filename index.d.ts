@@ -515,6 +515,7 @@ export class Printer {
      * Set line spacing
      */
     lineSpace(n?: number): Printer;
+    smooth(isEnabled: boolean): Printer;
 
     hardware(hw: string): Printer;
 
