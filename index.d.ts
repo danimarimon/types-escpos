@@ -534,6 +534,13 @@ export class Printer {
         size: number
     ): Printer;
 
+    qrcodeCustom(
+        code: string,
+        version: number,
+        level: QRCODE_LEVEL,
+        size: number
+    ): Printer;
+
     qrimage(content: string, callback?: (error: Error | null, printer?: Printer) => void): Printer;
     qrimage(content: string, options?: { type: string; mode: string, size: number }, callback?: (error: Error | null, printer?: Printer) => void): Printer;
     
