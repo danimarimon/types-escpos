@@ -425,6 +425,8 @@ export class Printer {
     println(content: any): Printer;
 
     newLine(): Printer;
+    horizontalTab(): Printer;
+    carriageReturn(): Printer;
 
     /**
      * Print text with EOL
