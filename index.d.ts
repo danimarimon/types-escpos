@@ -240,6 +240,12 @@ export namespace command {
         BARCODE_CODE128: '\x1d\x6b\x49'; // Barcode type CODE128
     };
 
+    const QR_CODE_CUSTOM: {
+        MODEL_CMD: '\x1d\x28\x6b\x04\x00\x31\x41';
+        SIZE_CMD: '\x1d\x28\x6b\x03\x00\x31\x43';
+        LEVEL_CMD: '\x1d\x28\x6b\x03\x00\x31\x45';
+    };
+
     const CODE2D_FORMAT: {
         TYPE_PDF417: any;
         TYPE_DATAMATRIX: any;
